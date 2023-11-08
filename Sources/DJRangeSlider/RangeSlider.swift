@@ -49,12 +49,18 @@ public class RangeSlider: UIControl {
     public var minValue: Int = 0 {
         didSet {
             sendActions(for: .valueChanged)
+            if minValue < minRange {
+                minRange = minValue
+            }
         }
     }
     
     public var maxValue: Int = 5 {
         didSet {
             sendActions(for: .valueChanged)
+            if maxValue > maxRange {
+                maxRange = maxValue
+            }
         }
     }
     
