@@ -74,7 +74,7 @@ public class RangeSlider: UIControl {
         }
     }
     
-    public override init(frame: CGRect) {
+    public init(frame: CGRect) {
         super.init(frame: frame)
         addSubView()
         makeConstraints()
