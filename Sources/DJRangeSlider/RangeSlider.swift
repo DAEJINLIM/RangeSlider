@@ -6,7 +6,7 @@
 
 import UIKit
 
-final class RangeSlider: UIControl {
+public class RangeSlider: UIControl {
     private let backgroundBar = UIView()
     private let sliderBar = UIView()
     private let rangeBar = UIView()
