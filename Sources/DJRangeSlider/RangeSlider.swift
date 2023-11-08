@@ -86,15 +86,15 @@ public class RangeSlider: UIControl {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if layoutFlag == false {
-            minPoint = calculatePointFromValue(minValue)
-            maxPoint = calculatePointFromValue(maxValue)
-            updateRangeStick()
-            layoutFlag = true
-        }
-    }
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        if layoutFlag == false {
+//            minPoint = calculatePointFromValue(minValue)
+//            maxPoint = calculatePointFromValue(maxValue)
+//            updateRangeStick()
+//            layoutFlag = true
+//        }
+//    }
     
     private func addSubView() {
         addSubview([backgroundBar, sliderBar, rangeBar, leftBall, rightBall])
