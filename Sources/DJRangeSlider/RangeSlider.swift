@@ -19,26 +19,26 @@ public class RangeSlider: UIControl {
     private var maxPoint = Int()
     private var layoutFlag = false
     
-    var trackTintColor: UIColor = .lightGray.withAlphaComponent(0.3) {
+    public var trackTintColor: UIColor = .lightGray.withAlphaComponent(0.3) {
         didSet {
             backgroundBar.backgroundColor = trackTintColor
         }
     }
     
-    var trackHighlightTintColor: UIColor = .systemBlue {
+    public var trackHighlightTintColor: UIColor = .systemBlue {
         didSet {
             rangeBar.backgroundColor = trackHighlightTintColor
         }
     }
     
-    var thumbTintColor: UIColor = .white {
+    public var thumbTintColor: UIColor = .white {
         didSet {
             leftBall.backgroundColor = thumbTintColor
             rightBall.backgroundColor = thumbTintColor
         }
     }
     
-    var roundness: CGFloat = 1.0 {
+    public var roundness: CGFloat = 1.0 {
         didSet {
             if roundness < 0.0 { roundness = 0.0 }
             if roundness > 1.0 { roundness = 1.0 }
@@ -46,26 +46,26 @@ public class RangeSlider: UIControl {
         }
     }
     
-    var minValue: Int = 0 {
+    public var minValue: Int = 0 {
         didSet {
             sendActions(for: .valueChanged)
         }
     }
     
-    var maxValue: Int = 5 {
+    public var maxValue: Int = 5 {
         didSet {
             sendActions(for: .valueChanged)
         }
     }
     
-    var minRange: Int = 0 {
+    public var minRange: Int = 0 {
         didSet {
             if minValue < minRange {
                 minRange = minValue
             }
         }
     }
-    var maxRange: Int = 10 {
+    public var maxRange: Int = 10 {
         didSet {
             if maxValue > maxRange {
                 maxRange = maxValue
@@ -73,7 +73,7 @@ public class RangeSlider: UIControl {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         addSubView()
         makeConstraints()
