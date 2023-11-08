@@ -6,8 +6,7 @@
 
 import UIKit
 
-@IBDesignable
-public class RangeSlider: UIControl {
+final class RangeSlider: UIControl {
     private let backgroundBar = UIView()
     private let sliderBar = UIView()
     private let rangeBar = UIView()
@@ -20,26 +19,26 @@ public class RangeSlider: UIControl {
     private var maxPoint = Int()
     private var layoutFlag = false
     
-    @IBInspectable public var trackTintColor: UIColor = .lightGray.withAlphaComponent(0.3) {
+    var trackTintColor: UIColor = .lightGray.withAlphaComponent(0.3) {
         didSet {
             backgroundBar.backgroundColor = trackTintColor
         }
     }
     
-    @IBInspectable public var trackHighlightTintColor: UIColor = .systemBlue {
+    var trackHighlightTintColor: UIColor = .systemBlue {
         didSet {
             rangeBar.backgroundColor = trackHighlightTintColor
         }
     }
     
-    @IBInspectable public var thumbTintColor: UIColor = .white {
+    var thumbTintColor: UIColor = .white {
         didSet {
             leftBall.backgroundColor = thumbTintColor
             rightBall.backgroundColor = thumbTintColor
         }
     }
     
-    @IBInspectable public var roundness: CGFloat = 1.0 {
+    var roundness: CGFloat = 1.0 {
         didSet {
             if roundness < 0.0 { roundness = 0.0 }
             if roundness > 1.0 { roundness = 1.0 }
@@ -47,26 +46,26 @@ public class RangeSlider: UIControl {
         }
     }
     
-    @IBInspectable public var minValue: Int = 0 {
+    var minValue: Int = 0 {
         didSet {
             sendActions(for: .valueChanged)
         }
     }
     
-    @IBInspectable public var maxValue: Int = 5 {
+    var maxValue: Int = 5 {
         didSet {
             sendActions(for: .valueChanged)
         }
     }
     
-    @IBInspectable public var minRange: Int = 0 {
+    var minRange: Int = 0 {
         didSet {
             if minValue < minRange {
                 minRange = minValue
             }
         }
     }
-    @IBInspectable public var maxRange: Int = 10 {
+    var maxRange: Int = 10 {
         didSet {
             if maxValue > maxRange {
                 maxRange = maxValue
@@ -74,7 +73,7 @@ public class RangeSlider: UIControl {
         }
     }
     
-    override public init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         addSubView()
         makeConstraints()
@@ -87,15 +86,15 @@ public class RangeSlider: UIControl {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        if layoutFlag == false {
-//            minPoint = calculatePointFromValue(minValue)
-//            maxPoint = calculatePointFromValue(maxValue)
-//            updateRangeStick()
-//            layoutFlag = true
-//        }
-//    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if layoutFlag == false {
+            minPoint = calculatePointFromValue(minValue)
+            maxPoint = calculatePointFromValue(maxValue)
+            updateRangeStick()
+            layoutFlag = true
+        }
+    }
     
     private func addSubView() {
         addSubview([backgroundBar, sliderBar, rangeBar, leftBall, rightBall])
