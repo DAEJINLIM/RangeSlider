@@ -5,7 +5,7 @@
 //
 
 import UIKit
-@IBDesignable
+
 public class RangeSlider: UIControl {
     private let backgroundBar = UIView()
     private let sliderBar = UIView()
@@ -73,7 +73,7 @@ public class RangeSlider: UIControl {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         addSubView()
         makeConstraints()
