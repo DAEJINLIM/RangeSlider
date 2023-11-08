@@ -2,8 +2,8 @@
 Default range slider made in Swift  
 The default value is similar to the swift slider.
 
-![Simulator Screen Recording - iPhone 15 Pro - 2023-11-08 at 22 52 57](https://github.com/DAEJINLIM/RangeSlider/assets/115560272/86e79212-c9f3-4de5-89f6-2d4c940afd43)
-![Simulator Screen Recording - iPhone 15 Pro - 2023-11-09 at 00 38 40](https://github.com/DAEJINLIM/RangeSlider/assets/115560272/be80ec54-f224-4b27-baf2-762b16b9bf47)
+![Simulator Screen Recording - iPhone 15 Pro - 2023-11-09 at 00 40 48](https://github.com/DAEJINLIM/RangeSlider/assets/115560272/c0c15ba2-12ad-470c-81c1-3dada5b5176b)
+
 ## Use
 
 This control was created in an environment without a storyboard.
