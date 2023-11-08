@@ -9,6 +9,7 @@ The default value is similar to the swift slider.
 This control was created in an environment without a storyboard.
 If the thumb value changes, use the value with reference to.
 ```swift
+import DJRangeSlider
 let rangeSlider = RangeSlider()
 view.addSubView(rangeSlider)
 rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
