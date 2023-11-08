@@ -11,6 +11,7 @@ class ViewController: UIViewController {
         let slider = RangeSlider()
         slider.minRange = -10
         slider.maxRange = 50
+        slider.thumbSize = 30
         return slider
     }()
     
