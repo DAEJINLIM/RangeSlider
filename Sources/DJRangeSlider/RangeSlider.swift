@@ -163,8 +163,8 @@ public class RangeSlider: UIControl {
                 if minPoint < 0 {
                     minPoint = 0
                 }
-                if minPoint > (maxPoint - 1) {
-                    minPoint = maxPoint - 1
+                if minPoint > maxPoint {
+                    minPoint = maxPoint
                 }
                 updateRangeStick()
                 minValue = (minPoint) * (maxRange - minRange) / Int(sliderBar.frame.width) + minRange
@@ -177,8 +177,8 @@ public class RangeSlider: UIControl {
                 if maxPoint > Int(sliderBar.frame.width) {
                     maxPoint = Int(sliderBar.frame.width)
                 }
-                if maxPoint < (minPoint + 1) {
-                    maxPoint = minPoint + 1
+                if maxPoint < minPoint {
+                    maxPoint = minPoint
                 }
                 maxValue = (maxPoint) * (maxRange - minRange) / Int(sliderBar.frame.width) + minRange
                 updateRangeStick()
