@@ -6,6 +6,7 @@
 
 import UIKit
 
+@IBDesignable
 public class RangeSlider: UIControl {
     private let backgroundBar = UIView()
     private let sliderBar = UIView()
@@ -86,15 +87,15 @@ public class RangeSlider: UIControl {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if layoutFlag == false {
-            minPoint = calculatePointFromValue(minValue)
-            maxPoint = calculatePointFromValue(maxValue)
-            updateRangeStick()
-            layoutFlag = true
-        }
-    }
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        if layoutFlag == false {
+//            minPoint = calculatePointFromValue(minValue)
+//            maxPoint = calculatePointFromValue(maxValue)
+//            updateRangeStick()
+//            layoutFlag = true
+//        }
+//    }
     
     private func addSubView() {
         addSubview([backgroundBar, sliderBar, rangeBar, leftBall, rightBall])
