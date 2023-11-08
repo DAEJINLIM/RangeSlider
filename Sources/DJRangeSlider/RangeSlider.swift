@@ -20,26 +20,26 @@ public class RangeSlider: UIControl {
     private var maxPoint = Int()
     private var layoutFlag = false
     
-    public var trackTintColor: UIColor = .lightGray.withAlphaComponent(0.3) {
+    @IBInspectable public var trackTintColor: UIColor = .lightGray.withAlphaComponent(0.3) {
         didSet {
             backgroundBar.backgroundColor = trackTintColor
         }
     }
     
-    public var trackHighlightTintColor: UIColor = .systemBlue {
+    @IBInspectable public var trackHighlightTintColor: UIColor = .systemBlue {
         didSet {
             rangeBar.backgroundColor = trackHighlightTintColor
         }
     }
     
-    public var thumbTintColor: UIColor = .white {
+    @IBInspectable public var thumbTintColor: UIColor = .white {
         didSet {
             leftBall.backgroundColor = thumbTintColor
             rightBall.backgroundColor = thumbTintColor
         }
     }
     
-    public var roundness: CGFloat = 1.0 {
+    @IBInspectable public var roundness: CGFloat = 1.0 {
         didSet {
             if roundness < 0.0 { roundness = 0.0 }
             if roundness > 1.0 { roundness = 1.0 }
@@ -47,26 +47,26 @@ public class RangeSlider: UIControl {
         }
     }
     
-    public var minValue: Int = 0 {
+    @IBInspectable public var minValue: Int = 0 {
         didSet {
             sendActions(for: .valueChanged)
         }
     }
     
-    public var maxValue: Int = 5 {
+    @IBInspectable public var maxValue: Int = 5 {
         didSet {
             sendActions(for: .valueChanged)
         }
     }
     
-    public var minRange: Int = 0 {
+    @IBInspectable public var minRange: Int = 0 {
         didSet {
             if minValue < minRange {
                 minRange = minValue
             }
         }
     }
-    public var maxRange: Int = 10 {
+    @IBInspectable public var maxRange: Int = 10 {
         didSet {
             if maxValue > maxRange {
                 maxRange = maxValue
