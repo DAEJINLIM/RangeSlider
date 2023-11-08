@@ -5,7 +5,7 @@
 //
 
 import UIKit
-
+@IBDesignable
 public class RangeSlider: UIControl {
     private let backgroundBar = UIView()
     private let sliderBar = UIView()
