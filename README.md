@@ -39,3 +39,6 @@ Create https://github.com/DAEJINLIM/RangeSlider .
 ## License
 
 RangeSlider is available under the MIT License
+
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDAEJINLIM&count_bg=%233D63C8&title_bg=%23555555&icon=protocols-dot-io.svg&icon_color=%23A293D5&title=today&edge_flat=false)](https://hits.seeyoufarm.com)
