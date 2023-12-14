@@ -28,9 +28,15 @@ Customizes the slider with the following values, and the properties provide acce
 - roundness : Adjust the value between the circle and the rectangle from 1.0 to 0.0 (default 1.0 is a circle)
 
 ## Installation
+### [Swift Package Manager](https://swift.org/package-manager/) - **Recommended**
 
-In the xcode, go to File -> Add Package Dependencies and go to the URL 
-Create https://github.com/DAEJINLIM/RangeSlider .
+Swift 5.3 in Xcode 12 [added support](https://github.com/apple/swift-evolution/blob/master/proposals/0271-package-manager-resources.md) for assets in Swift Packages.
+You can [just add](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) MessageKit package to your project by entering it's repository URL
+
+```
+https://github.com/DAEJINLIM/RangeSlider
+```
+Older versions of Swift and Xcode don't support MessageKit via SPM.
 
 ## Creator
 
