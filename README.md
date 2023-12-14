@@ -31,7 +31,7 @@ Customizes the slider with the following values, and the properties provide acce
 ### [Swift Package Manager](https://swift.org/package-manager/) - **Recommended**
 
 Swift 5.3 in Xcode 12 [added support](https://github.com/apple/swift-evolution/blob/master/proposals/0271-package-manager-resources.md) for assets in Swift Packages.
-You can [just add](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) MessageKit package to your project by entering it's repository URL
+You can [just add](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) RangeSlider package to your project by entering it's repository URL
 
 ```
 https://github.com/DAEJINLIM/RangeSlider
