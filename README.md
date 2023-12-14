@@ -36,7 +36,7 @@ You can [just add](https://developer.apple.com/documentation/xcode/adding_packag
 ```
 https://github.com/DAEJINLIM/RangeSlider
 ```
-Older versions of Swift and Xcode don't support MessageKit via SPM.
+Older versions of Swift and Xcode don't support RangeSlider via SPM.
 
 ## Creator
 
