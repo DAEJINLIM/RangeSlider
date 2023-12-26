@@ -44,4 +44,4 @@ Older versions of Swift and Xcode don't support RangeSlider via SPM.
 
 ## License
 
-RangeSlider is available under the MIT License
+RangeSlider is available under the MIT License.
